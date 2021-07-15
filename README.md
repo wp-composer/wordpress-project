@@ -13,14 +13,14 @@ for your setup.
 
 After that you can create the project:
 
-```
+``` bash
 composer create-project wp-composer/wordpress-project:5.x-dev some-dir --no-interaction
 ```
 
 With `composer require ...` you can download new dependencies to your
 installation.
 
-```
+``` bash
 cd some-dir
 composer require wpackagist-plugin/really-simple-ssl
 ```
