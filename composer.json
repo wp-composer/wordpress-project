@@ -41,6 +41,7 @@
         "sort-packages": true
     },
     "extra": {
+        "wordpress-install-dir": "web",
         "installer-paths": {
             "wordpress/wp-content/plugins/{$name}": [
                 "type:wordpress-plugin"
