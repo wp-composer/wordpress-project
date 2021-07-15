@@ -1,10 +1,4 @@
-
 <?php
-
-/**
- * @file
- * Contains \WordpressProject\composer\ScriptHandler.
- */
 
 namespace WordpressProject\composer;
 
