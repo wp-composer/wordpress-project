@@ -20,7 +20,6 @@
         }
     ],
     "require": {
-        "php": ">=7.3",
         "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "vlucas/phpdotenv": "^5.1",
@@ -28,11 +27,9 @@
         "johnpbloch/wordpress-core": "^5.5"
     },
     "require-dev": {
-        "drupal/core-dev": "^9.1",
-        "zaporylie/composer-drupal-optimizations": "^1.2"
     },
     "conflict": {
-        "drupal/drupal": "*"
+        "johnpbloch/wordpress-core": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
@@ -43,13 +40,13 @@
     "extra": {
         "wordpress-install-dir": "web",
         "installer-paths": {
-            "wordpress/wp-content/plugins/{$name}": [
+            "web/wp-content/plugins/{$name}": [
                 "type:wordpress-plugin"
             ],
-            "wordpress/wp-content/themes/{$name}": [
+            "web/wp-content/themes/{$name}": [
                 "type:wordpress-theme"
             ],
-            "wordpress/wp-content/mu-plugins/{$name}": [
+            "web/wp-content/mu-plugins/{$name}": [
                 "type:wordpress-muplugin"
             ]
         },
@@ -59,7 +56,7 @@
             "web/wp-content/uploads"
           ],
         "patchLevel": {
-            "drupal/core": "-p2"
+            "johnpbloch/wordpress-core": "-p2"
         },
         "patches": {
         }
