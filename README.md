@@ -79,6 +79,18 @@ section of composer.json:
 }
 ```
 
+This will also work for Wordpress core patches.
+
+```json
+"extra": {
+    "patches": {
+        "johnpbloch/wordpress-core" : {
+             "Issue #1486: Alter how Twenty Twenty-One sets up Dark Mode support.": "https://patch-diff.githubusercontent.com/raw/WordPress/wordpress-develop/pull/1486.patch"
+        }
+    }
+}
+```
+
 ### How do I specify a PHP version ?
 
 This project supports PHP 7.4 as minimum version (see [Wordpress requirements](https://wordpress.org/about/requirements/)), however it's possible that a `composer update` will upgrade some package that will then require PHP 7.4+.
