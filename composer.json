@@ -34,6 +34,20 @@
         "discard-changes": true,
         "sort-packages": true
     },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "WordpressProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "WordpressProject\\composer\\ScriptHandler::checkComposerVersion"
+        ]
+    },
     "extra": {
         "wordpress-install-dir": "web",
         "installer-paths": {
