@@ -28,9 +28,6 @@
     },
     "require-dev": {
     },
-    "conflict": {
-        "johnpbloch/wordpress-core": "*"
-    },
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
